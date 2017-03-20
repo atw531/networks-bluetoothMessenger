@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.desktop_mobile.bluetoothmessenger.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:title="New Connection"
+        android:orderInCategory="101"
+        android:id="@+id/nConnection"
+        android:icon="@android:drawable/ic_input_add"
+        android:enabled="true"
+        android:checkable="false"
+        android:visible="true" />
+    <item
+        android:title="Item"
+        android:orderInCategory="102" />
+</menu>
