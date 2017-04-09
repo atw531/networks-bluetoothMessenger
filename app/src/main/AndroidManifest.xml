@@ -21,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConnectionConfig"></activity>
+        <activity android:name=".ConnectionConfig" />
+        <activity android:name=".NewMessage" />
+        <activity android:name=".NewFile"></activity>
     </application>
 
 </manifest>

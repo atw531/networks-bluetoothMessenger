@@ -60,11 +60,13 @@ public class MainActivity extends AppCompatActivity {
 
     //On btnNewMessage Click
     public void btnNewMessage_OnClick(View view) {
-
+        Intent intent = new Intent(this, NewMessage.class);
+        startActivity(intent);
     }
 
     //On btnNewFile Click
     public void btnNewFile_OnClick(View view) {
-
+        Intent intent = new Intent(this, NewFile.class);
+        startActivity(intent);
     }
 }
