@@ -18,15 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -58,7 +49,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void  newConnection() {
-        Intent intent = new Intent(this, CreateNewActivity.class);
+        Intent intent = new Intent(this, ConnectionConfig.class);
         startActivity(intent);
+    }
+
+    //On btnConfig Click
+    public void btnConfig_OnClick(View view) {
+        newConnection();
+    }
+
+    //On btnNewMessage Click
+    public void btnNewMessage_OnClick(View view) {
+
+    }
+
+    //On btnNewFile Click
+    public void btnNewFile_OnClick(View view) {
+
     }
 }
