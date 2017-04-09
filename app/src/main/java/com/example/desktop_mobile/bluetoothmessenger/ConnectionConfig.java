@@ -8,23 +8,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.util.Set;
 
-public class CreateNewActivity extends AppCompatActivity {
+public class ConnectionConfig extends AppCompatActivity {
 
     private TableLayout tbl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_new);
-
+        setContentView(R.layout.activity_connection_config);
         Intent intent = getIntent();
 
         tbl = (TableLayout) this.findViewById(R.id.tblConnections);
@@ -60,6 +59,8 @@ public class CreateNewActivity extends AppCompatActivity {
 
                 tbl.addView(connectionRow);
 
+            } else {
+
             }
         }
     };
@@ -71,6 +72,7 @@ public class CreateNewActivity extends AppCompatActivity {
     }
 
     // dummy for testing some stuff
+    // just ignore this
     public void other() {
         BluetoothAdapter mBTAdapter = BluetoothAdapter.getDefaultAdapter();
 
