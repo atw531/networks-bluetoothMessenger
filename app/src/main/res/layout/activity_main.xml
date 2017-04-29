@@ -29,7 +29,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:id="@+id/btnConfig"
-        android:onClick="btnConfig_OnClick" />
+        android:onClick="btnConfig_OnClick (MainActivity)" />
 
     <Button
         android:text="Send a Message"
